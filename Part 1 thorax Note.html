@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anatomy - Thorax</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Indie Flower', cursive;
+            background-color: #ffffff;
+            margin: 30px;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #e8f0fe, #ffffff);
+            direction: ltr;
+            color: #37474f;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 25px;
+            border: 3px solid #ff6f61;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            background-color: #fffde7;
+            text-align: left;
+        }
+        h1 {
+            color: #d81b60;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: underline wavy #ffca28;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #0288d1;
+            font-size: 16px;
+            margin: 20px 0 10px;
+            border-bottom: 2px dashed #26a69a;
+        }
+        h3 {
+            color: #7b1fa2;
+            font-size: 14px;
+            margin: 15px 0 10px;
+        }
+        h4 {
+            color: #388e3c;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        p, li {
+            color: #37474f;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .emphasis {
+            color: #c2185b;
+            font-weight: bold;
+            background-color: #fce4ec;
+            padding: 3px 6px;
+            border-radius: 5px;
+        }
+        .highlight {
+            background-color: #fff9c4;
+            padding: 10px;
+            border-left: 5px solid #fbc02d;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: left;
+            font-size: 12px;
+        }
+        .page-ref {
+            color: #e64a19;
+            font-style: italic;
+            font-size: 11px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #e8f5e9;
+            direction: ltr;
+            text-align: left;
+            font-size: 12px;
+        }
+        th {
+            background-color: #4caf50;
+            color: white;
+            padding: 12px;
+            font-size: 12px;
+        }
+        td {
+            border: 1px solid #c8e6c9;
+            padding: 10px;
+            color: #37474f;
+            font-size: 12px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        ul li::before {
+            content: "• ";
+            color: #ff6f61;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+        .clinical-box {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .clinical-box h4 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+        .anatomy-box {
+            background-color: #f3e5f5;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #7b1fa2;
+        }
+        .function-box {
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #388e3c;
+        }
+        .interactive-box {
+            background-color: #fff3e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #ff9800;
+            cursor: pointer;
+        }
+        .interactive-box:hover {
+            background-color: #ffecb3;
+        }
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .quiz-question {
+            background-color: #e1f5fe;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #0288d1;
+        }
+        .quiz-option {
+            margin: 5px 0;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .quiz-option:hover {
+            background-color: #b3e5fc;
+        }
+        .correct {
+            background-color: #c8e6c9;
+        }
+        .incorrect {
+            background-color: #ffcdd2;
+        }
+        .diagram-placeholder {
+            background-color: #f5f5f5;
+            border: 1px dashed #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 Anatomy - Thorax</h1>
+
+        <!-- Topic 1: Conceptual Overview -->
+        <h2>📘 Thorax Conceptual Overview</h2>
+        <p class="page-ref">📄 Pages 125-126</p>
+
+        <h3>🔹 General Description:</h3>
+        <div class="anatomy-box">
+            <h4>I. Thoracic Cavity Structure</h4>
+            <ul>
+                <li><span class="emphasis">Thorax:</span> Irregularly shaped cylinder with narrow superior opening and large inferior opening</li>
+                <li><span class="emphasis">Superior thoracic aperture:</span> Open, continuous with neck</li>
+                <li><span class="emphasis">Inferior thoracic aperture:</span> Closed by diaphragm</li>
+                <li>Musculoskeletal wall: Flexible, segmentally arranged vertebrae, ribs, muscles, and sternum</li>
+            </ul>
+
+            <h4>II. Thoracic Cavity Subdivisions</h4>
+            <ul>
+                <li><span class="emphasis">Left and right pleural cavities:</span> Each surrounding a lung</li>
+                <li><span class="emphasis">Mediastinum:</span> Central partition containing heart, esophagus, trachea, major nerves, and blood vessels</li>
+            </ul>
+        </div>
+
+        <!-- Topic 2: Functions -->
+        <h2>📘 Thoracic Functions</h2>
+        <p class="page-ref">📄 Page 126</p>
+
+        <div class="function-box">
+            <h3>🔹 Primary Functions:</h3>
+            
+            <h4>I. Breathing</h4>
+            <ul>
+                <li>Contains lungs and breathing machinery (diaphragm, thoracic wall, ribs)</li>
+                <li>Volume changes via diaphragm movement and rib cage expansion</li>
+            </ul>
+
+            <h4>II. Protection of Vital Organs</h4>
+            <ul>
+                <li>Houses and protects heart, lungs, and great vessels</li>
+                <li>Diaphragm dome shape provides protection to some abdominal organs</li>
+                <li>Liver under right dome; stomach and spleen under left dome</li>
+                <li>Superior poles of kidneys lie on diaphragm</li>
+            </ul>
+
+            <h4>III. Conduit Function</h4>
+            <ul>
+                <li>Mediastinum acts as passage for structures between body regions</li>
+                <li>Esophagus, vagus nerves, thoracic duct pass through mediastinum</li>
+                <li>Phrenic nerves pass through to supply diaphragm</li>
+                <li>Trachea, thoracic aorta, superior vena cava course within mediastinum</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Element -->
+        <div class="interactive-box" onclick="toggleContent('breathing-mechanism')">
+            <h4>💡 Click to Learn: Breathing Mechanism</h4>
+            <div id="breathing-mechanism" class="hidden-content">
+                <p><span class="emphasis">Inspiration:</span> Diaphragm contracts and descends, ribs elevate → thoracic volume increases → air rushes into lungs</p>
+                <p><span class="emphasis">Expiration:</span> Diaphragm relaxes and ascends, ribs depress → thoracic volume decreases → air forced out of lungs</p>
+                <div class="diagram-placeholder">
+                    [Diagram: Breathing mechanism showing diaphragm movement]
+                </div>
+            </div>
+        </div>
+
+        <!-- Topic 3: Component Parts -->
+        <h2>📘 Thoracic Component Parts</h2>
+        <p class="page-ref">📄 Pages 126-127</p>
+
+        <h3>🔹 Thoracic Wall Structure:</h3>
+        
+        <h4>I. Skeletal Elements</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Description</th>
+                    <th>Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Posterior Wall</td>
+                    <td>12 thoracic vertebrae + intervertebral discs</td>
+                    <td>Provides central support</td>
+                </tr>
+                <tr>
+                    <td>Lateral Wall</td>
+                    <td>12 ribs on each side + 3 muscle layers</td>
+                    <td>Span intercostal spaces, move ribs</td>
+                </tr>
+                <tr>
+                    <td>Anterior Wall</td>
+                    <td>Sternum (manubrium, body, xiphoid process)</td>
+                    <td>Sternal angle - major clinical landmark</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>II. Rib Articulations</h4>
+        <ul>
+            <li>All ribs articulate with thoracic vertebrae posteriorly</li>
+            <li>Ribs II-IX: Three articulations with vertebral column</li>
+            <li>Anteriorly: Costal cartilages of ribs I-VII articulate with sternum</li>
+            <li>Ribs VIII-X: Articulate with costal cartilages above</li>
+            <li>Ribs XI-XII: Floating ribs (no anterior articulation)</li>
+        </ul>
+
+        <!-- Topic 4: Superior & Inferior Thoracic Apertures -->
+        <h2>📘 Thoracic Apertures</h2>
+        <p class="page-ref">📄 Pages 128-129</p>
+
+        <div class="anatomy-box">
+            <h3>🔹 Superior Thoracic Aperture</h3>
+            <ul>
+                <li><span class="emphasis">Borders:</span> Body of vertebra TI posteriorly, medial margin of rib I on each side, manubrium anteriorly</li>
+                <li>Oblique angle, facing somewhat anteriorly</li>
+                <li>Pleural cavities extend above rib I into neck root</li>
+                <li>Structures pass between neck/head and thorax vertically</li>
+            </ul>
+
+            <h3>🔹 Inferior Thoracic Aperture</h3>
+            <ul>
+                <li><span class="emphasis">Borders:</span> Body of TXII, rib XII, distal end of rib XI, costal margin, xiphoid process</li>
+                <li>Large and expandable</li>
+                <li>Closed by diaphragm</li>
+                <li>Structures pass between abdomen and thorax through or posterior to diaphragm</li>
+            </ul>
+        </div>
+
+        <!-- Topic 5: Diaphragm -->
+        <h2>📘 Diaphragm</h2>
+        <p class="page-ref">📄 Page 129</p>
+
+        <h3>🔹 Key Features:</h3>
+        <ul>
+            <li>Musculotendinous structure sealing inferior thoracic aperture</li>
+            <li>Muscle fibers arise radially from aperture margins, converge into central tendon</li>
+            <li>Forms right and left domes (right dome higher, reaches rib V)</li>
+            <li>Contracts → dome height decreases → thoracic volume increases</li>
+            <li><span class="emphasis">Openings:</span> Esophagus and IVC penetrate diaphragm; aorta passes posteriorly</li>
+        </ul>
+
+        <!-- Topic 6: Mediastinum & Pleural Cavities -->
+        <h2>📘 Mediastinum & Pleural Cavities</h2>
+        <p class="page-ref">📄 Pages 130-131</p>
+
+        <h3>🔹 Mediastinum:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Division</th>
+                    <th>Location</th>
+                    <th>Contents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Superior Mediastinum</td>
+                    <td>Above plane through sternal angle & TIV/V disc</td>
+                    <td>Great vessels, trachea, esophagus</td>
+                </tr>
+                <tr>
+                    <td>Anterior Mediastinum</td>
+                    <td>Between sternum and pericardium</td>
+                    <td>Fat, lymph nodes</td>
+                </tr>
+                <tr>
+                    <td>Middle Mediastinum</td>
+                    <td>Pericardium and heart</td>
+                    <td>Heart, pericardium</td>
+                </tr>
+                <tr>
+                    <td>Posterior Mediastinum</td>
+                    <td>Between pericardium and thoracic vertebrae</td>
+                    <td>Esophagus, descending aorta, azygos system</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🔹 Pleural Cavities:</h3>
+        <ul>
+            <li>Completely separated by mediastinum</li>
+            <li>Lined by pleura (parietal and visceral)</li>
+            <li>Lungs attached to mediastinum by roots</li>
+            <li>Costodiaphragmatic recess: Largest recess, accommodates lung volume changes</li>
+        </ul>
+
+        <!-- Quiz Section -->
+        <div class="quiz-question">
+            <h4>🧠 Quick Knowledge Check</h4>
+            <p>Which structure passes through the diaphragm at vertebral level TVIII?</p>
+            <div class="quiz-option" onclick="checkAnswer(this, 'correct')">Inferior vena cava</div>
+            <div class="quiz-option" onclick="checkAnswer(this, 'incorrect')">Aorta</div>
+            <div class="quiz-option" onclick="checkAnswer(this, 'incorrect')">Esophagus</div>
+            <div class="quiz-option" onclick="checkAnswer(this, 'incorrect')">Thoracic duct</div>
+        </div>
+
+        <!-- Topic 7: Relationship to Other Regions -->
+        <h2>📘 Relationship to Other Regions</h2>
+        <p class="page-ref">📄 Pages 132-133</p>
+
+        <h3>🔹 Regional Connections:</h3>
+        
+        <h4>I. Neck</h4>
+        <ul>
+            <li>Superior thoracic aperture opens directly into neck root</li>
+            <li>Pleural cavities extend 2-3 cm above rib I into neck</li>
+            <li>Major visceral structures pass between neck and superior mediastinum</li>
+        </ul>
+
+        <h4>II. Upper Limb</h4>
+        <ul>
+            <li>Axillary inlet: Gateway to upper limb on each side of superior thoracic aperture</li>
+            <li>Formed by: Superior margin of scapula, clavicle, lateral margin of rib I</li>
+            <li>Large blood vessels pass over rib I between axillary inlet and superior thoracic aperture</li>
+        </ul>
+
+        <h4>III. Abdomen</h4>
+        <ul>
+            <li>Diaphragm separates thorax from abdomen</li>
+            <li>Structures pass between thorax and abdomen through or posterior to diaphragm</li>
+            <li><span class="emphasis">IVC:</span> Pierces central tendon at TVIII</li>
+            <li><span class="emphasis">Esophagus:</span> Penetrates muscular part at TX</li>
+            <li><span class="emphasis">Aorta:</span> Passes posteriorly at TXII</li>
+        </ul>
+
+        <!-- Topic 8: Breast Anatomy -->
+        <h2>📘 Breast Anatomy</h2>
+        <p class="page-ref">📄 Pages 133, 140-142</p>
+
+        <div class="anatomy-box">
+            <h3>🔹 Breast Structure:</h3>
+            
+            <h4>I. Composition</h4>
+            <ul>
+                <li>Mammary glands, superficial fascia, and overlying skin</li>
+                <li>Located in pectoral region on anterior thoracic wall</li>
+                <li>Modified sweat glands in superficial fascia anterior to pectoral muscles</li>
+            </ul>
+
+            <h4>II. Internal Structure</h4>
+            <ul>
+                <li>Ducts and secretory lobules → 15-20 lactiferous ducts → nipple</li>
+                <li>Areola: Circular pigmented area around nipple</li>
+                <li>Suspensory ligaments: Support breast, continuous with dermis</li>
+                <li>Retromammary space: Loose connective tissue allowing movement</li>
+            </ul>
+
+            <h4>III. Vascular Supply & Innervation</h4>
+            <ul>
+                <li><span class="emphasis">Arterial:</span> Axillary artery branches, internal thoracic artery, intercostal arteries</li>
+                <li><span class="emphasis">Venous:</span> Parallels arteries → axillary, internal thoracic, intercostal veins</li>
+                <li><span class="emphasis">Innervation:</span> Anterior and lateral cutaneous branches of T2-T6 intercostal nerves</li>
+                <li><span class="emphasis">Lymphatic:</span> 75% to axillary nodes, remainder to parasternal nodes</li>
+            </ul>
+        </div>
+
+        <div class="clinical-box">
+            <h4>💡 Clinical Correlation: Breast Cancer</h4>
+            <p>Breast cancer develops in acini, lactiferous ducts, and lobules. Tumor spread depends on cellular origin and affects treatment response. Lymphatic spread is complex - to axillary, supraclavicular, parasternal nodes, and even abdominal nodes or opposite breast.</p>
+            <p><span class="emphasis">Signs:</span> Peau d'orange (orange peel texture), cancer en cuirasse (hard, woody skin)</p>
+            <p><span class="emphasis">Mastectomy risks:</span> Damage to long thoracic nerve (winged scapula), nerve to latissimus dorsi</p>
+        </div>
+
+        <!-- Topic 9: Key Features -->
+        <h2>📘 Key Thoracic Features</h2>
+        <p class="page-ref">📄 Pages 134-139</p>
+
+        <h3>🔹 Vertebral Level TIV/V:</h3>
+        <div class="highlight">
+            <p>The horizontal plane through TIV/V disc is one of the most significant in the body because it:</p>
+            <ul>
+                <li>Passes through sternal angle anteriorly</li>
+                <li>Separates superior from inferior mediastinum</li>
+                <li>Marks superior limit of pericardium</li>
+                <li>Marks where aortic arch begins and ends</li>
+                <li>Level where SVC penetrates pericardium</li>
+                <li>Level of tracheal bifurcation</li>
+                <li>Superior limit of pulmonary trunk</li>
+            </ul>
+        </div>
+
+        <h3>🔹 Venous Shunts from Left to Right:</h3>
+        <ul>
+            <li>Right atrium receives deoxygenated blood on right side of midline</li>
+            <li>Blood from left side must cross midline to reach right side</li>
+            <li><span class="emphasis">Left brachiocephalic vein:</span> Crosses posterior to manubrium</li>
+            <li><span class="emphasis">Hemiazygos/accessory hemiazygos veins:</span> Drain left thoracic wall → azygos vein → SVC</li>
+        </ul>
+
+        <h3>🔹 Segmental Neurovascular Supply:</h3>
+        <ul>
+            <li>Arteries from thoracic aorta and internal thoracic arteries</li>
+            <li>Posterior and anterior intercostal vessels run along inferior rib margins</li>
+            <li>Intercostal nerves (anterior rami of thoracic spinal nerves) run with vessels</li>
+            <li>Neurovascular bundle position important for clinical procedures</li>
+        </ul>
+
+        <h3>🔹 Sympathetic System:</h3>
+        <ul>
+            <li>Preganglionic fibers from T1 to L2 spinal nerves</li>
+            <li>Sympathetic trunks: Paravertebral ganglia connected to spinal nerves</li>
+            <li>Fibers for head emerge from T1</li>
+        </ul>
+
+        <h3>🔹 Flexible Wall & Breathing:</h3>
+        <ul>
+            <li>Rib posterior attachment superior to anterior attachment</li>
+            <li>Rib elevation moves anterior wall forward</li>
+            <li>Middle rib region inferior to ends → lateral expansion when elevated</li>
+            <li>Diaphragm changes vertical dimension</li>
+            <li>Combined movements essential for breathing</li>
+        </ul>
+
+        <h3>🔹 Diaphragm Innervation:</h3>
+        <ul>
+            <li>Phrenic nerves from cervical plexus (C3-C5, mainly C4)</li>
+            <li>Pass vertically through neck, superior thoracic aperture, mediastinum</li>
+            <li>Supply entire diaphragm including crura</li>
+            <li>Embryological origin explains cervical innervation</li>
+            <li>Spinal injuries below C5 do not affect diaphragm</li>
+        </ul>
+
+        <!-- Final Summary -->
+        <div class="highlight">
+            <p><span class="emphasis">Key Learning Points:</span> The thorax is a complex cylindrical structure with vital respiratory, protective, and conduit functions. Understanding thoracic apertures, pleural cavities, mediastinal divisions, and neurovascular patterns is essential for clinical practice. The diaphragm's central role in respiration and its unique cervical innervation are particularly important concepts.</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Toggle hidden content
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+
+        // Quiz answer checking
+        function checkAnswer(element, result) {
+            // Remove previous classes
+            const options = element.parentElement.querySelectorAll('.quiz-option');
+            options.forEach(opt => {
+                opt.classList.remove('correct', 'incorrect');
+            });
+            
+            // Add appropriate class
+            element.classList.add(result);
+            
+            // Show correct answer if wrong
+            if (result === 'incorrect') {
+                const correctOption = element.parentElement.querySelector('.quiz-option[onclick*="correct"]');
+                correctOption.classList.add('correct');
+            }
+        }
+    </script>
+</body>
+</html>
